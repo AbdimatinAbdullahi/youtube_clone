@@ -4,7 +4,6 @@ import { Typography, Card, CardContent, CardMedia } from '@mui/material'
 import { CheckCircle } from '@mui/icons-material'
 import { demoThumbnailUrl, demoVideoUrl, demoVideoTitle, demoChannelTitle, demoChannelUrl } from '../utils/constant'
 const VideoCard = ({video: {id: {videoId}, snippet}}) => {
-  console.log('Video card working')
   return (
     <Card sx={{width: {xs: '100%', sm: '358px' ,md: '320px' } , boxShadow: "none", borderRadius: 4}} > 
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
